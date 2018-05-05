@@ -12,7 +12,11 @@ header {
   font-size: 14px;
   font-weight: bold;
   color: black;
+  background-color: white;
   width: 100%;
+  position:fixed;
+  z-index: 1;
+  top:0;
 }
 
 .logo {
@@ -20,6 +24,7 @@ header {
   align-items: center;
   color: MediumAquamarine;
   padding: 0 30px;
+  width:50%
 }
 
 .logo span {
@@ -35,5 +40,138 @@ nav  {
 nav a {
   text-decoration: underline;
   color:black;
+}
+.container {
+  display: flex;
+    width:1232px;
+    margin: 0 auto 78px auto;
+    justify-content: space-between;
+    position: relative;
+    top:70px;
+    flex-shrink: 0;
+      font-family: Georgia;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+}
+.column.large{
+  width:630px;
 
+}
+
+.lead-story span {
+  background-image: url("../images/main-story.png");
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+  height: 240px;
+  display: block;
+}
+
+.image.earth {
+  background-image: url("../images/fall.png");
+}
+.image.camera {
+  background-image: url("../images/cameraman.png");
+}
+.column.medium {
+  width:300px;
+
+}
+
+.image.cats {
+  background-image: url("../images/img-story-1.png");
+}
+.column.small {
+  width:240px;
+}
+
+.image {
+  font-family: Georgia;
+ font-weight: bold;
+ font-size: 30px;
+ color: white;
+ height: 300px;
+ text-align: center;
+}
+.text {
+  font-family: Georgia;
+font-size: 15px;
+color: black;
+}
+
+.large-content {
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: space-between;
+
+
+}
+.story {
+  width:300px;
+
+}
+.one {
+  order:1;
+}
+.two {
+  order:2;
+}
+.three {
+  order:3;
+}
+.four {
+  order:4;
+}
+.side-bar h2 {
+  font-size: 16px;
+font-weight: bold;
+}
+
+.bite {
+  display:block;
+  background-color: WhiteSmoke;
+ font-family: Verdana;
+ font-size: 12px;
+ color: DimGray;
+ border-bottom: 1px solid black;
+ padding: 11px 20px;
+}
+.bitetop {
+   border-top: 1px solid black;
+}
+footer {
+  background-color: MediumAquamarine;
+ margin: auto;
+ font-family: Verdana;
+ font-size: 12px;
+  width: 100%;
+  height:100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bot_logo{
+  font-family: Georgia;
+ font-size: 16px;
+ font-weight: bold;
+ color: white;
+}
+.bot_nav{
+ display: inline-block;
+  position: relative;
+  left:15px;
+  padding: 0 20px;
+}
+.copyright{
+  margin-top: 20px;
+}
+.bot_nav a{
+  text-decoration: unerline;
+  color: black;
 }
